@@ -1,0 +1,33 @@
+O projeto se baseia em modelar um conjunto de dados sobre imoveis (população, preço, localização, bairro...) e
+estimar o valor baseado nos dados. O resultado sera utilizado em outro modelo subsequente.
+A base de dados se baseia em 20000 dados sobre os imoveis, e por isso sera utilizado um modelo de aprendizado
+do tipo supervisionado.
+Ao final deseja-se obter valores, qual o preço para cada imovel, e nao uma coleção ou agrupamentos. Será
+utilizado o tipo modelo.
+Nao sera necessario atualizar os dados diariamente, e por isso nao sera necessario implementar treinamento
+online.
+
+Medidas de desempenho:
+Desvio Padrão: utilizado para amostras que seguem distribuição normal.
+Desvio Medio: indicado para o caso em que outliers são frequentes.
+
+CUIDADO: o cerebro humano é muito bom em reconhecer padrões,e por isso ao analisar o conjunto de dados o
+ideal é separar uma parte FIXA dos dados como dados de verificação. Esses dados, cerca de 20%, deve se manter
+fixo durante toda a programação. Logo, algum algoritmo imutavel de marcação de dados deve ser usado. Os dados
+nao possue
+
+Para o caso de um conjunto de dados grande, milhares de dados, uma amostragem aleatoria é um maneira boa de separar os conjuntos teste e treino. Porém, para poucos dados essa abordagem nao é boa e pode gerar vies.
+Uma maneira de lidar com poucos dados é utilizar uma amostragem estratificada, estratos sao os representantes de um conjunto de dados.
+
+Cada instancia do dataseet representa um bairro.
+
+longitude -> longitude
+latitude -> latitude
+housing_median_age -> idade mediana da moradia
+total_rooms -> total de comodos
+total_bedrooms -> total de quartos
+population -> população
+households -> familias
+median_income -> renda mediana
+median_house_value -> valor mediano da casa
+ocean_proximity -> proximidade do oceano

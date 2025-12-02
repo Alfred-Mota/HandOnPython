@@ -1,0 +1,14 @@
+numpy==1.26.4
+ultralytics==8.0.58
+
+torch==2.1.2+cpu
+torchvision==0.16.2+cpu
+torchaudio==2.1.2+cpu
+
+opencv-python==4.9.0.80
+pillow==10.2.0
+scipy==1.11.4
+tqdm==4.66.4
+matplotlib==3.8.2
+pandas==2.1.4
+pyyaml==6.0.1

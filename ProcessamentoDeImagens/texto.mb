@@ -5,11 +5,26 @@ Comando para criar o dentro da pasta: C:\Users\Alfredo\AppData\Roaming\jupyter o
 usado para rodar o python:
 
 Para controlar qual python usar é preciso apontar para ele:
-python 3.10: "C:\Users\Alfredo\AppData\Local\Programs\Python\Python310\python.exe"
-"C:\Users\Alfredo\AppData\Local\Programs\Python\Python310\python.exe" -m ipykernel install --user --name yoloenv --display-name "Python 3.10 Env"
+python 3.11: "C:\Users\Alfredo\AppData\Local\Programs\Python\Python311\python.exe"
+
+& "C:\Users\Alfredo\AppData\Local\Programs\Python\Python311\python.exe" -m ipykernel install --user --name envpython311 --display-name "Python 3.11 Env"
+Installed kernelspec envPython311 in C:\Users\Alfredo\AppData\Roaming\jupyter\kernels\envpython311
+
+Para ativar utilizase: 
+python -m venv 'Caminho da Pasta'
 
 ###ATENÇÃO COM OPENCV
 
-* Melhor performance com OPENCV 4.7
+* Melhor performance com OPENCV 4.9
 * Feita com NUMPY 1.X
-* Nao trabalha com caminhos contendo espaço ou caracteres especiais
+* Nao trabalha com caminhos contendo espaço ou caracteres especiais, tive que criar um arquivo separado para o
+ conjunto de dados
+* Torch 2.9.1+cpu é incompatível com YOLOv8 porque:
+    YOLOv8 só suporta Torch até 2.5.x
+    Torch 2.9.x CPU-Windows é instável para deep learning pesado
+    Torchvision 0.24.x depende de C++ operators que NÃO existem no Windows CPU
+    Torch 2.9.x usa muito mais RAM e CPU, causando kernel crash
+    Novo modo “safe load” é incompatível com pesos YOLO antigos
+    Compativel com Python 3.10.4+
+* Usar Torch 2.2.1, o computador nao possui CUDA
+* Numpy 2.X nao é compativel com Torch 2.2.1, reinstalar para NumPy 1.26.4

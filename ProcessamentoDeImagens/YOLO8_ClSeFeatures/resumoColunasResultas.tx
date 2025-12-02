@@ -1,0 +1,10 @@
+| Coluna                  | Significado                                                  |
+| ----------------------- | ------------------------------------------------------------ |
+| `epoch`                 | Número da época no treinamento                               |
+| `train/loss`            | Erro do modelo no dataset de treino                          |
+| `metrics/accuracy_top1` | % de acerto Top-1 (a predição principal está correta)        |
+| `metrics/accuracy_top5` | % de acerto Top-5 (classe correta entre as 5 mais prováveis) |
+| `val/loss`              | Erro do modelo no dataset de validação                       |
+| `lr/pg0`                | Learning rate do grupo de parâmetros 0                       |
+| `lr/pg1`                | Learning rate do grupo de parâmetros 1                       |
+| `lr/pg2`                | Learning rate do grupo de parâmetros 2                       |

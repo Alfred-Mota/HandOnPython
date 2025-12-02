@@ -1,4 +1,5 @@
 ### Para rodar Python no Jupiter é preciso utilizar um kernel python:
+### Foi utilizada um versao do ipykernel ===  6.28.0
 pip install ipykernel
 
 Comando para criar o dentro da pasta: C:\Users\Alfredo\AppData\Roaming\jupyter o kernel que sera

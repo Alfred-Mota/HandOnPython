@@ -3,4 +3,13 @@ pip install ipykernel
 
 Comando para criar o dentro da pasta: C:\Users\Alfredo\AppData\Roaming\jupyter o kernel que sera
 usado para rodar o python:
-python -m ipykernel install --user --name yoloenv --display-name "Python 3.10 (yoloenv)"
+
+Para controlar qual python usar é preciso apontar para ele:
+python 3.10: "C:\Users\Alfredo\AppData\Local\Programs\Python\Python310\python.exe"
+"C:\Users\Alfredo\AppData\Local\Programs\Python\Python310\python.exe" -m ipykernel install --user --name yoloenv --display-name "Python 3.10 Env"
+
+###ATENÇÃO COM OPENCV
+
+* Melhor performance com OPENCV 4.7
+* Feita com NUMPY 1.X
+* Nao trabalha com caminhos contendo espaço ou caracteres especiais
